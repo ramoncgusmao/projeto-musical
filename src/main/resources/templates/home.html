@@ -1,0 +1,99 @@
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Notas basico</title>
+<meta charset="UTF-8" />
+
+<link th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+		<div class="collapse navbar-collapse text-right" id="myNavbar7">
+			<ul class="navbar-nav ml-auto flex-nowrap">
+				<li class="nav-item"><a href="href="
+					https://www.linkedin.com/in/ramoncantanhede/"" class="nav-link">
+						Desenvolvido por Ramon Gusmão</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron">
+		<div class="container">
+
+			<h1 class="display-3">Notas Musicais</h1>
+			<p>Aplicação simples para testar o funcionamento da biblioteca
+				MIDI do javax no Spring. E testar outros fundamentos. O link do
+				codigo fonte se encontra no botão abaixo. Se divirta tocando.</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#" role="button"> GitHub
+					»</a>
+			</p>
+		</div>
+	</div>
+	<div class="container">
+		<form action="#" data-th-action="@{/nota/}" method="post">
+			<div class="row mb-3">
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="0">Dó</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-dark btn-block"
+						name="action" value="1">Dó #</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="2">Ré</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-dark btn-block"
+						name="action" value="3">Ré #</button>
+				</div>
+			</div>
+			<div class="row mb-3">
+
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="4">Mi</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="5">Fá</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-dark btn-block"
+						name="action" value="6">Fá #</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="7">Sol</button>
+				</div>
+			</div>
+			<div class="row mb-3">
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-dark btn-block"
+						name="action" value="8">Sol #</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="9">Lá</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-dark btn-block"
+						name="action" value="10">Lá #</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-lg btn-success btn-block"
+						name="action" value="11">Sí</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
