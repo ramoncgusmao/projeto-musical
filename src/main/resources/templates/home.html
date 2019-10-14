@@ -14,7 +14,7 @@
 		<div class="collapse navbar-collapse text-right" id="myNavbar7">
 			<ul class="navbar-nav ml-auto flex-nowrap">
 				<li class="nav-item"><a href="
-					https://www.linkedin.com/in/ramoncantanhede/" class="nav-link">
+					https://www.linkedin.com/ramoncantanhede/" class="nav-link">
 						Desenvolvido por Ramon Gusmão</a></li>
 			</ul>
 		</div>
@@ -90,6 +90,10 @@
 				</div>
 			</div>
 		</form>
+		<audio controls>
+		<source src="horse.ogg" type="audio/ogg" th:field="${som}">
+		<source src="horse.mp3" type="audio/mpeg" th:field="${som}">
+		</audio>
 	</div>
 
 	<script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>

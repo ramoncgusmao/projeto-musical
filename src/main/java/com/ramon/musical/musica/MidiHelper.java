@@ -5,6 +5,7 @@ import javax.sound.midi.MidiChannel;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Synthesizer;
+import javax.sound.midi.VoiceStatus;
 
 /*
  * Baseado no codigo do Baralaborn
@@ -13,7 +14,7 @@ import javax.sound.midi.Synthesizer;
 public class MidiHelper {
 	
 	
-	public static void playSomething(int nota) throws MidiUnavailableException {
+	public static VoiceStatus[] playSomething(int nota) throws MidiUnavailableException {
 		Synthesizer synthesizer = MidiSystem.getSynthesizer();
 		
 		long startTime = System.nanoTime();
@@ -25,7 +26,8 @@ public class MidiHelper {
 		boolean loadSucesso = synthesizer.loadInstrument(instruments[0]);
 		
 		
-		midiChannel[0].noteOn(nota,100);
+		 midiChannel[0].noteOn(nota, 100);
+		 return synthesizer.getVoiceStatus();
 	}
 
 }
